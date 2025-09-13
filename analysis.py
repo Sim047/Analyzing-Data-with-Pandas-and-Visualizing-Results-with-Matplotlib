@@ -25,6 +25,8 @@ print(df.describe())
 # Group by species
 print(df.groupby("species").mean(numeric_only=True))
 
+# Task 3: Data Visualization
+
 import matplotlib.pyplot as plt
 import seaborn as sns
 
@@ -53,3 +55,4 @@ plt.show()
 sns.scatterplot(x="sepal length (cm)", y="petal length (cm)", hue="species", data=df)
 plt.title("Sepal Length vs Petal Length")
 plt.show()
+
